@@ -7,14 +7,10 @@ import java.io.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ReportReader {
-
-  private static final String CSV_FILE_PATH = "./data/test.csv";
-
   /* 
    * Reads every row of the CSV into a string array then returns list of row arrays. 
    */
@@ -38,10 +34,6 @@ public class ReportReader {
       e.printStackTrace();
     }
     return allAds; 
-  }
-
-  public static void main(String[] args) {
-    readCSV(CSV_FILE_PATH).forEach(array -> System.out.println(Arrays.toString(array)));
   }
 
 }
